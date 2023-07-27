@@ -68,17 +68,17 @@
                     <ul
                         class="flex flex-col p-4 md:p-0 mt-4 font-semibold border rounded-lg md:flex-row md:mt-0 md:border-0 ">
                         <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-white" aria-current="page">Home</a>
+                            <a href="#" class="block py-2 pl-3 pr-2 text-white" aria-current="page">Home</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-white rounded ">About Us</a>
+                            <a href="#" class="block py-2 pl-3 pr-2 text-white rounded ">About Us</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-white rounded">Shop</a>
+                            <a href="#" class="block py-2 pl-3 pr-2 text-white rounded">Shop</a>
                         </li>
 
                         <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-white rounded">All Fruits</a>
+                            <a href="#" class="block py-2 pl-3 pr-2 text-white rounded">All Fruits</a>
                         </li>
 
                     </ul>
@@ -105,12 +105,12 @@
 
 
                     <!-- search input -->
-                    <div class="pt-2 relative mx-auto text-gray-600 hidden md:block">
+                    <div class="relative mx-auto text-gray-600 hidden md:block">
                         <input
                             class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-[50px] text-sm border-none"
                             type="search" name="search" placeholder="Search">
                         <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
-                            <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                            <svg class="relative -mt-2 text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
                                 viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
                                 xml:space="preserve" width="512px" height="512px">
@@ -121,17 +121,28 @@
                     </div>
 
 
-
-                    <button data-collapse-toggle="navbar-search" type="button"
-                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden"
-                        aria-controls="navbar-search" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 17 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 1h15M1 7h15M1 13h15" />
-                        </svg>
-                    </button>
+                    <div class="dropdown">
+                        <button data-collapse-toggle="navbar-search" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden"
+                            aria-controls="navbar-search" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+                        <ul tabindex="0"
+                            class="relative w-[200px] shadow-xl -ml-[150px] menu menu-sm dropdown-content z-[1] py-2 mt-1 bg-gray-100">
+                            <li>
+                                <input type="text" placeholder="Search" class="border border-gray-300 py-1 w-full" />
+                            </li>
+                            <li class="p-1"><a href="#">Home</a></li>
+                            <li class="p-1"><a href="#">About US</a></li>
+                            <li class="p-1"><a href="#">Shop</a></li>
+                            <li class="p-1"><a href="#">All Fruits</a></li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -240,7 +251,7 @@
 
 
         <!-- sub menu section -->
-        <section class="max-w-screen-xl mx-auto -mt-24 relative hidden lg:block">
+        <section class="max-w-screen-xl mx-auto -mt-20 relative hidden lg:block">
 
             <div
                 class="bg-white w-10/12 p-5 mx-auto flex justify-between items-center text-center drop-shadow-xl rounded-lg">
@@ -282,7 +293,7 @@
 
 
         <!-- deal section -->
-        <section class="max-w-screen-xl mx-auto  px-4 lg:px-0 mt-16">
+        <section class="max-w-screen-xl mx-auto  px-4 md:px-0 mt-16">
 
 
             <div class="flex justify-between items-center flex-col md:flex-row">
@@ -404,6 +415,8 @@
                             </div>
                         </form>
                     </dialog>
+
+
 
                 </div>
 
@@ -664,6 +677,10 @@
 
             </div>
 
+            <div class="flex justify-center mt-10">
+                <button class="btn text-[16px] capitalize text-white bg-common-red font-bold border-none">Shop All</button>
+            </div>
+
 
         </section>
 
@@ -849,11 +866,10 @@
                     <!-- single card -->
                     <div class="flex flex-col md:flex-row gap-2 mb-10">
                         <div class="scale-75 mx-auto md:mx-0">
-                            <img src="./images/Group 46.png" alt="">
+                            <img src="./images/Group 47.png" alt="">
                         </div>
                         <div>
-                            <h2 class="text-center md:text-start font-extrabold text-[16px] text-gray-950">Dedicated
-                                Team</h2>
+                            <h2 class="text-center md:text-start font-extrabold text-[16px] text-gray-950">Fresh is Best</h2>
                             <div class="flex justify-center md:justify-start">
                                 <div class="my-3 border-b border-gray-400 w-[100px]"></div>
                             </div>
@@ -868,11 +884,10 @@
                     <!-- single card -->
                     <div class="flex flex-col md:flex-row gap-2 ">
                         <div class="scale-75 mx-auto md:mx-0">
-                            <img src="./images/Group 46.png" alt="">
+                            <img src="./images/Group48.png" alt="">
                         </div>
                         <div>
-                            <h2 class="text-center md:text-start font-extrabold text-[16px] text-gray-950">Dedicated
-                                Team</h2>
+                            <h2 class="text-center md:text-start font-extrabold text-[16px] text-gray-950">Gift Certificates</h2>
                             <div class="flex justify-center md:justify-start">
                                 <div class="my-3 border-b border-gray-400 w-[100px]"></div>
                             </div>
@@ -899,7 +914,7 @@
                     <!-- signle card -->
                     <div class="flex flex-col-reverse md:flex-row-reverse lg:flex-row gap-2 mb-10">
                         <div>
-                            <h2 class="font-extrabold text-[16px] text-gray-950">Dedicated Team</h2>
+                            <h2 class="font-extrabold text-[16px] text-gray-950">Integrated Supplier</h2>
                             <div class="flex justify-center md:justify-start lg:justify-end">
                                 <div class="my-3 border-b border-gray-400 w-[100px]"></div>
                             </div>
@@ -911,14 +926,14 @@
                             </div>
                         </div>
                         <div class="scale-75 mx-auto">
-                            <img src="./images/Group 46.png" alt="">
+                            <img src="./images/group49.png" alt="">
                         </div>
                     </div>
 
                     <!-- signle card -->
                     <div class="flex flex-col-reverse md:flex-row-reverse lg:flex-row gap-2 mb-10">
                         <div>
-                            <h2 class="font-extrabold text-[16px] text-gray-950">Dedicated Team</h2>
+                            <h2 class="font-extrabold text-[16px] text-gray-950">Sustainable Practice</h2>
                             <div class="flex justify-center md:justify-start lg:justify-end">
                                 <div class="my-3 border-b border-gray-400 w-[100px]"></div>
                             </div>
@@ -930,14 +945,14 @@
                             </div>
                         </div>
                         <div class="scale-75 mx-auto">
-                            <img src="./images/Group 46.png" alt="">
+                            <img src="./images/Group50.png" alt="">
                         </div>
                     </div>
 
                     <!-- signle card -->
                     <div class="flex flex-col-reverse md:flex-row-reverse lg:flex-row gap-2 mb-10">
                         <div>
-                            <h2 class="font-extrabold text-[16px] text-gray-950">Dedicated Team</h2>
+                            <h2 class="font-extrabold text-[16px] text-gray-950">The Benifits Only</h2>
                             <div class="flex justify-center md:justify-start lg:justify-end">
                                 <div class="my-3 border-b border-gray-400 w-[100px]"></div>
                             </div>
@@ -949,7 +964,7 @@
                             </div>
                         </div>
                         <div class="scale-75 mx-auto">
-                            <img src="./images/Group 46.png" alt="">
+                            <img src="./images/Group 51.png" alt="">
                         </div>
                     </div>
 
